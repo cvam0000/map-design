@@ -1,0 +1,386 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container
+{
+    width: 98%;
+    margin: auto;
+}
+.first-row-inner
+{
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    margin: auto;
+    margin-top: 5px;
+    /* border: 2px solid rgb(233, 233, 233);
+    border-style: dashed; */
+    border-radius: 4px;
+}
+@media(max-width:600px)
+{
+    .first-row-inner
+    {
+        flex-direction: column-reverse;
+    }
+}
+.first-col-1
+{
+    width: 30%;
+}
+
+.first-col-1-inner
+{
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-col-1-header
+{
+    height: 55px;
+    background: rgb(40, 151, 241);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+.first-col-1-header span
+{
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+.first-col-1-1
+{
+    min-height: 380px;
+    width: 90%;
+    margin: auto;
+    margin-top: 9px;
+    background: rgb(245, 245, 245);
+    border-radius: 4px;
+}
+
+.first-col-1-2
+{
+    /* min-height: 380px; */
+    width: 90%;
+    margin: auto;
+    margin-top: 9px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+@media(max-width:600px)
+{
+    .first-col-1
+    {
+        width: 100%;
+    }
+}
+.first-col-2
+{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first-col-2-inner
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.first-col-2-map
+{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-top: 40px;
+}
+.first-col-2-map svg
+{
+   width: 90%;
+   padding-bottom: 80px;
+}
+
+@media(max-width:600px)
+{
+    .first-col-2
+    {
+        width: 100%;
+    }
+    .first-col-2-map svg
+{
+   width: 98%;
+   margin: auto;
+   padding-bottom: 35px;
+}
+.first-col-2-map
+{  
+    width: 100%;
+    padding-top: 20px;
+}
+}
+.back-to-map
+{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 2;
+}
+/* map scale */
+.map-scale
+{
+    width: 100%;
+}
+.map-scale img
+{
+    width: 100%;
+}
+
+/* shutdown stats */
+.shutdown-stats-block
+{
+    width: 100%;
+}
+.shutdown-stats-inner
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.shutdown-stats-text-blocks
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.shutdown-text-lower
+{
+    background: rgb(112, 117, 124);
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+    
+}
+.shutdown-text-upper
+{
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+}
+
+/* lockdown counts */
+.lockdowns-count-block
+{
+    width: 100%;
+    margin-top: 20px;
+}
+.lockdowns-count-block-inner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lockdown-count-row
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.lockdown-count-col
+{
+    width: 45%;
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lockdown-count-col:nth-child(1)
+{
+    background: white;
+    border-radius: 4px;
+}
+.lockdown-count-col:nth-child(2)
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(0, 138, 252);
+}
+
+/* pull-down-to see btn */
+.pull-down-to-see-detail-block
+{
+    font-size: 13px;
+    text-align: center;
+}
+
+/*down arrow  */
+.down-arrow-icon
+{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: rgb(0, 138, 252);
+    transition: ease-in-out 0.2s;
+}
+
+.down-arrow-icon:hover
+{
+transform: scale(1.2);
+cursor: pointer;
+}
+
+/* internet stats table */
+.lockdown-stats-table-block
+{
+    width: 100%;
+    display: none;
+}
+.lockdown-stats-table-block-inner
+{
+    overflow: scroll;
+    height: 400px;
+}
+.lockdown-stats-table-block-inner::-webkit-scrollbar
+{
+    width: 5px;
+    border-radius: 40px;
+}
+.lockdown-stats-table-block-inner::-webkit-scrollbar-thumb
+{
+    background: rgb(68, 68, 68);
+    border-radius: 40px;
+}
+/* recent-shutdown */
+.recent-shutdown-block
+{
+    overflow: scroll;
+    height: 350px;
+    margin-top: 20px;
+}
+.recent-shutdown-block::-webkit-scrollbar
+{
+    width: 5px;
+    border-radius: 40px;
+}
+.recent-shutdown-block::-webkit-scrollbar-thumb
+{
+    background: rgb(68, 68, 68);
+    border-radius: 40px;
+}
+.recent-shutdown-block-inner
+{
+    width: 90%;
+    margin: auto;
+}
+
+/* recent-shutdown-card */
+.recent-shutdown-card
+{
+    min-height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+.recent-shutdown-card:nth-child(1)
+{
+    margin-top: unset;
+}
+.recent-shutdown-card-date
+{
+    margin-top: 10px;
+    background: white;
+    width: max-content;
+    padding: 3px 20px 3px 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 17px;
+}
+.recent-shutdown-card-body
+{
+    padding-left: 13px;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(43, 42, 42);
+}
+.recent-shutdown-card-source
+{
+    padding-left: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(0, 140, 255);
+}
+
+/* toggle block */
+.states-name-block
+{
+    position: absolute;
+    min-height: 180px;
+    width: 350px;
+    top: 0;
+    right: 10px;
+}
+.states-name-block-inner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.shutdowns-in-state,.state-name
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 132, 255);
+    margin-top: 10px;
+}
+.world-india-toggle
+{
+    font-size: 23px;
+}
+.active-map
+{
+    color: rgb(0, 110, 255);
+}
+.toggle-icon
+{
+    color: rgb(0, 111, 202);
+}
+
+@media(max-width:600px)
+{
+    .states-name-block
+    {
+        width: 100%;
+        position: relative;
+    }
+}
+
