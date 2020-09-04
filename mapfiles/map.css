@@ -22,6 +22,14 @@ th {
     text-align: left;
     padding: 8px 2px 8px 2px;
 }
+th
+{
+    text-align: justify;
+}
+td
+{
+    padding: 10px 1px 10px 10px;
+}
 
 tr:nth-child(even) {
     background-color: #dddddd;
