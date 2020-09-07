@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+p{
+    margin: unset;
+    padding: unset;
+}
 
 /* spacing */
 a{
@@ -197,7 +201,7 @@ a{
 /* end of custom css classes for shortcut */
 
 /* starting of site */
-.container
+.custom-container
 {
     width: 98%;
     margin: auto;
@@ -771,7 +775,7 @@ font-weight: 600;
 .fifth-inner-container
 {
     display: flex;
-    width: 94%;
+    width: 99%;
     margin: auto;
 }
 .fifth-col-1
@@ -1213,7 +1217,22 @@ color: rgb(40, 151, 241);
     width: 73%;
   }
  
+  .seventh-heading
+  {
+      font-size: 14px;
+      text-align: center;
+  }
+  .partners-image
+{
+    height: 32px;
 }
+.partners-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+
 
 
 /* video  */
