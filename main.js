@@ -30,6 +30,7 @@ $(".fa-toggle-off").click(function(){
   $("#close-btn").click(function () {
       $("#yt-video").fadeOut(400);
       // $("#nav-header").css("position","fixed");
+      $(".youtube-video").attr('src',"")
   });
 
 $(".video-play-btn-img").click(function()
@@ -37,3 +38,20 @@ $(".video-play-btn-img").click(function()
   $("#yt-video").fadeIn(400);
   $(".youtube-video").attr('src',$(this).attr('data-url'))
 })
+
+
+$(".shutdown-play-btn").click(function()
+{
+  $("#yt-video").fadeIn(400);
+  $(".youtube-video").attr('src',$(this).attr('data-url'))
+})
+
+
+$("#back_to_map").click(function()
+{
+  $("#hidden-video-container").fadeOut(400);
+  $("#hidden-video-spacing").fadeOut(400);
+
+})
+
+

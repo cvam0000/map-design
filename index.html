@@ -6,16 +6,18 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="mapfiles/map.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
 
     <title>Internetshutdowns</title>
 </head>
@@ -28,8 +30,8 @@
             <div class="video-playback-inner">
                 <div class="video-close-btn" id="close-btn"><span class="close-btn">X</span> Close</div>
                 <div class="video-section">
-                    <iframe class="youtube-video"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe class="youtube-video" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </div>
@@ -184,17 +186,66 @@
         </div>
     </div>
     <!-- end of second-container -->
-    <div class="spacing-3"></div>
+    <div class="spacing-3" id="hidden-video-spacing" style="display: none;"></div>
+    <div class="shutdown-videos-container" style="display:none" id="hidden-video-container">
+        <div class="spacing-5"></div>
+        <div class="shutdown-video-header-1"><b>Shutdown </b>Videos</div>
+        <div class="spacing-3"></div>
+        <div class="shutdown-videos-inner">
+            <div class="shutdown-video-col"
+                style="background-image:url('https://lh3.googleusercontent.com/proxy/f9sk_snoaYi1dvn1X_KPTqbfJAjGo5Z4_KtypfgTFQueNgfNuugjVGcaDtjqFLm2B-BBxjMWDTQs7IFcwjzknMdn0g9JVWFzJ7qRfzbI4JdzHN4xJHeNlgF-S1KrO8JVsCAQ')">
+                <img src="./assets/images/playbtn.png" data-url="https://www.youtube.com/embed/snNxT-F6RxY"
+                    alt="playbtn" class="shutdown-play-btn">
+                <div class="shutdown-video-txt">Kashmir’s Shutdown ...</div>
+            </div>
+            <div class="shutdown-video-col"
+                style="background-image:url('https://lh3.googleusercontent.com/proxy/f9sk_snoaYi1dvn1X_KPTqbfJAjGo5Z4_KtypfgTFQueNgfNuugjVGcaDtjqFLm2B-BBxjMWDTQs7IFcwjzknMdn0g9JVWFzJ7qRfzbI4JdzHN4xJHeNlgF-S1KrO8JVsCAQ')">
+                <img src="./assets/images/playbtn.png" data-url="https://www.youtube.com/embed/snNxT-F6RxY"
+                    alt="playbtn" class="shutdown-play-btn">
+                <div class="shutdown-video-txt">Kashmir’s Shutdown ...</div>
+            </div>
+            <div class="shutdown-video-col"
+                style="background-image:url('https://lh3.googleusercontent.com/proxy/f9sk_snoaYi1dvn1X_KPTqbfJAjGo5Z4_KtypfgTFQueNgfNuugjVGcaDtjqFLm2B-BBxjMWDTQs7IFcwjzknMdn0g9JVWFzJ7qRfzbI4JdzHN4xJHeNlgF-S1KrO8JVsCAQ')">
+                <img src="./assets/images/playbtn.png" data-url="https://www.youtube.com/embed/snNxT-F6RxY"
+                    alt="playbtn" class="shutdown-play-btn">
+                <div class="shutdown-video-txt">Kashmir’s Shutdown ...</div>
+            </div>
+        </div>
+        <div class="spacing-3"></div>
+        <div class="shutdown-video-header-1"><b>Research </b>Work</div>
+        <div class="spacing-3"></div>
+        <div class="shutdown-videos-inner">
+            <div class="shutdown-video-col"
+                style="background-image:url('https://lh3.googleusercontent.com/proxy/f9sk_snoaYi1dvn1X_KPTqbfJAjGo5Z4_KtypfgTFQueNgfNuugjVGcaDtjqFLm2B-BBxjMWDTQs7IFcwjzknMdn0g9JVWFzJ7qRfzbI4JdzHN4xJHeNlgF-S1KrO8JVsCAQ')">
+                <img src="./assets/images/playbtn.png" alt="playbtn" class="shutdown-play-btn"
+                    data-url="https://www.youtube.com/embed/snNxT-F6RxY">
+                <div class="shutdown-video-txt">Kashmir’s Shutdown ...</div>
+            </div>
+            <div class="shutdown-video-col"
+                style="background-image:url('https://lh3.googleusercontent.com/proxy/f9sk_snoaYi1dvn1X_KPTqbfJAjGo5Z4_KtypfgTFQueNgfNuugjVGcaDtjqFLm2B-BBxjMWDTQs7IFcwjzknMdn0g9JVWFzJ7qRfzbI4JdzHN4xJHeNlgF-S1KrO8JVsCAQ')">
+                <img src="./assets/images/playbtn.png" alt="playbtn" class="shutdown-play-btn"
+                    data-url="https://www.youtube.com/embed/snNxT-F6RxY">
+                <div class="shutdown-video-txt">Kashmir’s Shutdown ...</div>
+            </div>
+            <div class="shutdown-video-col"
+                style="background-image:url('https://lh3.googleusercontent.com/proxy/f9sk_snoaYi1dvn1X_KPTqbfJAjGo5Z4_KtypfgTFQueNgfNuugjVGcaDtjqFLm2B-BBxjMWDTQs7IFcwjzknMdn0g9JVWFzJ7qRfzbI4JdzHN4xJHeNlgF-S1KrO8JVsCAQ')">
+                <img src="./assets/images/playbtn.png" alt="playbtn" class="shutdown-play-btn"
+                    data-url="https://www.youtube.com/embed/snNxT-F6RxY">
+                <div class="shutdown-video-txt">Kashmir’s Shutdown ...</div>
+            </div>
+        </div>
+    </div>
+    <div class="spacing-3" id="hide-shutdown-spacing"></div>
     <!-- third container -->
-    <div class="custom-container">
+    <div class="custom-container" id="hide-shutdown-heading">
         <div class="forth-container">
             <p class="forth-container-header txt-center"><b>Longest</b> Shutdowns</p>
         </div>
     </div>
     <!-- end of third container -->
-    <div class="spacing-4"></div>
+    <div class="spacing-4" id="hide-shutdown-spacing-2"></div>
     <!-- starting of forth-container -->
-    <div class="custom-container">
+    <div class="custom-container" id="hide-shutdown-container">
         <div class="forth-container">
             <div class="forth-container-inner">
                 <div class="forth-container-row">
@@ -293,18 +344,24 @@
                         <div class="fifth-col-2-row-1"
                             style="background-image: url('https://images.wallpapersden.com/image/download/blue-background-geometric-abstract_63624_1920x1080.jpg');">
                             <div class="fifth-col-2-row-1-txt">Kashmir’s Shutdown ...</div><img
-                                src="./assets/images/playbtn.png" alt="playbutton" data-url="https://www.youtube.com/embed/acZzaMouS4U?controls=0" class="video-play-btn-img">
+                                src="./assets/images/playbtn.png" alt="playbutton"
+                                data-url="https://www.youtube.com/embed/acZzaMouS4U?controls=0"
+                                class="video-play-btn-img">
                         </div>
                         <div class="fifth-col-2-row-2">
                             <div class="fifth-col-2-row-2-col-1"
                                 style="background-image: url('https://lh3.googleusercontent.com/proxy/wmI6HhkSXL5n-AOyj9JZpucqiTlUc-rMjIPYe9IVPpEMQfAGnV694-qQuEItAoNa0R1erxeoI2o_5mP9K8_GK-APOCgFArq0msKJgjBBdsG8I3q9VnINc-Lb5Q9sDWZ8msBy');">
                                 <div class="fifth-col-2-row-2-txt">Kashmir’s Shutdown ...</div><img
-                                    src="./assets/images/playbtn.png" alt="playbutton" data-url="https://www.youtube.com/embed/acZzaMouS4U?controls=0" class="video-play-btn-img">
+                                    src="./assets/images/playbtn.png" alt="playbutton"
+                                    data-url="https://www.youtube.com/embed/acZzaMouS4U?controls=0"
+                                    class="video-play-btn-img">
                             </div>
                             <div class="fifth-col-2-row-2-col-1"
                                 style="background-image: url('https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/109855728/original/de5140b31bdcde8cb032cf3962f84cf1b3e74af4/create-unique-modern-abstract-geometric-background.jpg');">
                                 <div class="fifth-col-2-row-2-txt">Kashmir’s Shutdown ...</div><img
-                                    src="./assets/images/playbtn.png" alt="playbutton" data-url="https://www.youtube.com/embed/acZzaMouS4U?controls=0" class="video-play-btn-img">
+                                    src="./assets/images/playbtn.png" alt="playbutton"
+                                    data-url="https://www.youtube.com/embed/acZzaMouS4U?controls=0"
+                                    class="video-play-btn-img">
                             </div>
                         </div>
                     </div>
@@ -513,9 +570,9 @@
             </div>
         </div>
     </div>
-<div>
+    <div>
 
-</div>
+    </div>
     <!-- end of sixth col -->
     <div class="spacing-5"></div>
     <div class="seventh-container">
@@ -528,20 +585,24 @@
                 <div class="seventh-partners-col"><img src="./assets/images/partners/logo4.png"></div> -->
                 <div class="partners-container">
                     <div class="partners-inner" id="partners-inner">
-                      <div class="partners-columns">
-                        <div class="partners-image" style="background-image: url('./assets/images/partners/logo1.png');"></div>
-                      </div>
-                      <div class="partners-columns">
-                        <div class="partners-image" style="background-image: url('./assets/images/partners/logo2.png');"></div>
-                      </div>
-                      <div class="partners-columns">
-                        <div class="partners-image" style="background-image: url('./assets/images/partners/logo3.png');"></div>
-                      </div>
-                      <div class="partners-columns">
-                        <div class="partners-image" style="background-image: url('./assets/images/partners/logo4.png');"></div>
-                      </div>
+                        <div class="partners-columns">
+                            <div class="partners-image"
+                                style="background-image: url('./assets/images/partners/logo1.png');"></div>
+                        </div>
+                        <div class="partners-columns">
+                            <div class="partners-image"
+                                style="background-image: url('./assets/images/partners/logo2.png');"></div>
+                        </div>
+                        <div class="partners-columns">
+                            <div class="partners-image"
+                                style="background-image: url('./assets/images/partners/logo3.png');"></div>
+                        </div>
+                        <div class="partners-columns">
+                            <div class="partners-image"
+                                style="background-image: url('./assets/images/partners/logo4.png');"></div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -552,7 +613,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
     <!--scripts-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
     <script src="main.js"></script>
     <script src="carousel.js"></script>

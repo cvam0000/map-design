@@ -43,6 +43,7 @@ SR.click(function() {
     return_back();
     plot(value, name, color, dist);
     dist_name(id_state);
+
 });
 
 
@@ -50,6 +51,13 @@ SR.click(function() {
 function return_back() {
     var back_function = '<i onclick="back()" class="fa fa-arrow-left" style="font-size:24px"></i>';
     $('#back_to_map').html(back_function);
+    $("#hidden-video-container").fadeIn(300);
+    $("#hidden-video-spacing").fadeIn(300);
+    $("#hide-shutdown-spacing").fadeOut(300);
+    $("#hide-shutdown-heading").fadeOut(300);
+    $("#hide-shutdown-spacing-2").fadeOut(300);
+    $("#hide-shutdown-container").fadeOut(300);
+
 }
 
 function dist_name(dist_name) {
