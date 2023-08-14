@@ -1,4 +1,6 @@
 # Map Design
+## https://internetshutdowns.in/ is using it
+## Need contributors for code cleanup / expand.
 
 Welcome to the **Map Design** repository! This project focuses on creating dynamic SVG-based maps for geographical visualization. The maps can be customized to display various types of data, and the project provides interactive features for exploring different regions.
 
@@ -36,6 +38,7 @@ We welcome contributions from the community to enhance the functionality and ver
 5. Open a pull request, describing the changes and enhancements you've made.
 
 Please review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) when contributing.
+To do : Add a code of conduct.
 
 ## License
 
@@ -43,7 +46,7 @@ Please review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) when contr
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please reach out to us at [email@example.com](mailto:email@example.com). Let's collaborate to create compelling geographical visualizations!
+If you have any questions, suggestions, or feedback, please reach out to us at [cvam0000@gmail.com]. Let's collaborate to create compelling geographical visualizations!
 
 ---
 
